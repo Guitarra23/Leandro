@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escapamentos Leandro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            animation: fadeIn 1.5s ease-in;
+        }
+        header {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            animation: slideDown 1s ease-out;
+        }
+        header .logo img {
+            width: 80px;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(90deg, #222, #333);
+            animation: fadeInUp 1.5s ease-in;
+        }
+        .hero .btn {
+            background-color: #d4af37;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .hero .btn:hover {
+            background-color: #fff;
+            transform: scale(1.1);
+        }
+        .servicos {
+            padding: 40px;
+            background-color: #1a1a1a;
+        }
+        .servicos .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 30%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+        }
+        .card img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 80%;
+            }
+            .hero {
+                padding: 30px;
+            }
+        }
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #fff;
+            padding: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes fadeInUp {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        @keyframes slideDown {
+            from {transform: translateY(-50px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+        @keyframes pulse {
+            0% {transform: scale(1);}
+            50% {transform: scale(1.1);}
+            100% {transform: scale(1);}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Escapamentos Leandro">
+            <h1>Escapamentos Leandro</h1>
+            <p>Serviços Especializados em Escapamentos</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Serviços de Escapamentos</h2>
+        <p>Somos especializados em serviços de escapamentos, oferecendo soluções de qualidade para seu veículo.</p>
+        <a href="#servicos" class="btn">Saiba Mais</a>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <h2>Serviços e Produtos</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="catalisador.png" alt="Catalisadores">
+                <h3>Catalisadores</h3>
+                <p>Substituição e instalação de catalisadores para diversos modelos.</p>
+            </div>
+            <div class="card">
+                <img src="ponteira.png" alt="Ponteiras">
+                <h3>Ponteiras Nacionais e Importadas</h3>
+                <p>Uma ampla linha de ponteiras para personalização do seu carro.</p>
+            </div>
+            <div class="card">
+                <img src="reparo.png" alt="Instalação e Reparos">
+                <h3>Instalação e Reparos</h3>
+                <p>Serviços completos de instalação e manutenção de escapamentos.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Contato</h2>
+        <p>Telefone: +55 11 95898-9385 / +55 11 95354-4176</p>
+        <p>E-mail: [inserir]</p>
+        <p>Endereço: AV. Barão de Mauá nº 5.400</p>
+    </footer>
+
+    <a href="https://wa.me/5511958989385" class="whatsapp" target="_blank">WhatsApp</a>
+</body>
+</html>
